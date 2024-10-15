@@ -1,0 +1,124 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    color: #002C54; /* Dark navy from color palette */
+    background-color: #E0F0F6; /* Light blue from palette */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #004680; /* Deep ocean blue */
+    color: #fff;
+    padding: 1rem;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.hero {
+    background: url('/mnt/data/image.png') no-repeat center center/cover;
+    color: #fff;
+    padding: 8rem 0;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+}
+
+.about-section, .projects-section, .resume-section, .contact-section {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+.project-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #0285A5; /* Mid ocean blue */
+    padding: 2rem;
+    border-radius: 8px;
+    width: 300px;
+    color: #fff;
+}
+
+.button {
+    background-color: #002C54;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact-section input, 
+.contact-section textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #004680;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #002C54;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 4rem;
+}
