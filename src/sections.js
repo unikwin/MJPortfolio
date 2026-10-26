@@ -33,7 +33,8 @@ function rows(entries) {
 export const sections = {
   about: (content, page) => {
     const paragraphs = content.about[page] ?? [];
-    return paragraphs.map((paragraph) => `<p>${escape(paragraph)}</p>`).join("\n        ");
+    if (!paragraphs.length) return "";
+    return `<div>\n        ${paragraphs.map((paragraph) => `<p>${escape(paragraph)}</p>`).join("\n        ")}\n      </div>`;
   },
 
   experience: (content, page) => {
