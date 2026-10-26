@@ -1,0 +1,10 @@
+{
+  "name": "mj-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.js",
+    "test": "node --test",
+    "start": "python3 -m http.server 8000"
+  }
+}

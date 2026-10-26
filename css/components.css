@@ -1,0 +1,61 @@
+/* Components: small reusable pieces. Each block below is independent. */
+
+/* ---- Readable text over the graph paper ---- */
+.item, .lede, .hint, .rows li, section > div > p { background: var(--paper-veil); }
+
+/* ---- Focus navigation (one link per page) ---- */
+.focus { margin: 0 0 0.9rem; }
+.focus ul { display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; margin: 0; padding: 0; }
+.focus a {
+  display: inline-block;
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--ink);
+  border: 1.5px solid var(--rule);
+  text-decoration: none;
+}
+.focus a:hover { border-color: var(--accent); color: var(--ink); }
+.focus a[aria-current="page"] { background: var(--accent); border-color: var(--accent); color: var(--paper); }
+
+.hint { color: var(--muted); font-size: 0.92rem; margin: 0 0 1.75rem; max-width: 36rem; }
+
+/* ---- Contact links ---- */
+.links { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin: 0; padding: 0; list-style: none; font-weight: 600; }
+
+/* ---- Item (experience and projects) ---- */
+.item { margin-bottom: 1.75rem; }
+.item:last-child { margin-bottom: 0; }
+.item h3 { font-family: var(--font-head); font-size: 1rem; font-weight: 700; margin: 0; }
+.item p { max-width: 38rem; }
+.meta { color: var(--muted); font-size: 0.95rem; margin: 0.1rem 0 0.45rem; }
+
+/* ---- Rows (competitions, conferences, posts, games) ---- */
+.rows { list-style: none; margin: 0; padding: 0; }
+.rows li { display: grid; grid-template-columns: 4.5rem 1fr; gap: 1rem; padding: 0.85rem 0; border-bottom: 1px solid var(--rule); }
+.rows li:first-child { border-top: 1px solid var(--rule); }
+.rows li.plain { grid-template-columns: 1fr; }
+.rows .yr { font-family: var(--font-head); color: var(--accent); font-weight: 700; font-variant-numeric: lining-nums tabular-nums; }
+.rows .name { font-weight: 600; }
+.rows .note { display: block; color: var(--muted); font-size: 0.95rem; font-weight: 400; }
+
+/* ---- Groups of rows (blog posts by type) ---- */
+.group { margin-bottom: 2rem; }
+.group:last-child { margin-bottom: 0; }
+.group-title { font-family: var(--font-head); font-size: 1rem; font-weight: 700; margin: 0 0 0.6rem; }
+
+.twitch { display: inline-block; margin-top: 0.75rem; font-family: var(--font-head); font-weight: 700; }
+
+/* ---- Cat album ---- */
+.album { display: grid; grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr)); gap: 1rem; margin: 0; padding: 0; list-style: none; }
+.album figure { margin: 0; }
+.album img, .album .tile { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; border-radius: 6px; background: var(--rule); }
+.album .tile { display: grid; place-items: center; text-align: center; padding: 1rem; color: var(--muted); font-size: 0.9rem; border: 2px dashed var(--rule); background: transparent; }
+.album figcaption { color: var(--muted); font-size: 0.92rem; margin-top: 0.4rem; }
+
+/* ---- Easter egg link ---- */
+.paw { font-size: 0.85rem; color: var(--muted); opacity: 0.6; padding: 0.25rem 0.5rem; text-decoration: none; }
+.paw:hover { opacity: 1; color: var(--accent); }
